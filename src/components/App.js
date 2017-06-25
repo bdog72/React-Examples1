@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Components from './Components'
+import BasicButton1 from './BasicButton1'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 export default class App extends Component {
@@ -10,7 +11,8 @@ export default class App extends Component {
         <div>
           <ul>
             <li><Link to='/'>React Component</Link></li>
-            <li><Link to='/ex2'>Forms</Link></li>
+            <li><Link to='/ex2'>Basic Button</Link></li>
+
             <hr />
             <Route exact path='/' component={Ex1} />
             <Route path='/ex2' component={Ex2} />
@@ -28,7 +30,7 @@ const Ex1 = () => (
 )
 const Ex2 = () => (
   <div>
-    Bdoggy
+    <BasicButton1 />
   </div>
 )
 const styles1 = {
