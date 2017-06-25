@@ -8,6 +8,15 @@ html {
 }
 
 body {
-  margin: 40px;
+  margin: 0;
   font: $base-text-size / 1 $base-font-family;
+}
+
+.switch {
+  text-align: center;
+  cursor: pointer;
+}
+
+.choice1 {
+  font-size: 50px;
 }

@@ -1,36 +1,51 @@
 import React, { Component } from 'react'
+import Components from './Components'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-const CREDITCARD = 'CreditCard'
-const BTC = 'Bitcoin'
-
-class App extends Component {
-  state = {
-    payMethod: BTC
-  }
-
-  select = (choice) => {
-    return (evt) => {
-      this.setState({
-        payMethod: choice
-      })
-    }
-  }
-
+export default class App extends Component {
   render () {
     return <div>
-      <div className='switch'>
-        <div className='choice'
-          onClick={this.select(CREDITCARD)}>
-          Creditcard
+      <App1 />
+      <Router>
+        <div>
+          <ul>
+            <li><Link to='/'>React Component</Link></li>
+            <li><Link to='/ex2'>Forms</Link></li>
+            <hr />
+            <Route exact path='/' component={Ex1} />
+            <Route path='/ex2' component={Ex2} />
+          </ul>
         </div>
-        <div className='choice'
-          onClick={this.select(BTC)}>
-          Bitcoin
-        </div>
-        Pay with: {this.state.payMethod}
-      </div>
+      </Router>
     </div>
   }
 }
 
-export default App
+const Ex1 = () => (
+  <div>
+    <Components />
+  </div>
+)
+const Ex2 = () => (
+  <div>
+    Bdoggy
+  </div>
+)
+const styles1 = {
+  app: {
+    paddingTop: 20,
+    textAlign: 'center',
+    fontSize: 50
+    // marginbottom: 20
+  }
+}
+
+class App1 extends Component {
+  render () {
+    return (
+      <div style={styles1.app}>
+        Welcome to React!
+      </div>
+    )
+  }
+}
