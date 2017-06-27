@@ -20,3 +20,12 @@ body {
 .choice1 {
   font-size: 50px;
 }
+
+ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.routes {
+  display: flex;
+}

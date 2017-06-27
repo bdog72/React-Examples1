@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './switch.css'
+import styles from '../styles/switch.css'
 const CREDITCARD = 'CreditCard'
 const BTC = 'Bitcoin'
 
