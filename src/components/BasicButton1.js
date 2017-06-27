@@ -14,12 +14,14 @@ export default class BasicButton1 extends Component {
       <h1>What Do You Think Of React?</h1>
       <h2>Click a button and check the console</h2>
       <button
+        className='button'
         name='button-1'
         value='great'
         onClick={this.onGreatClick}>
         Great
       </button>
       <button
+        className='button'
         name='button-2'
         value='amazing'
         onClick={this.onAmazingClick}>

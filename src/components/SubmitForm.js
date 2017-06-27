@@ -20,10 +20,13 @@ render () {
         <h1>Sign up Sheet</h1>
         <form onSubmit={this.onFormSubmit}>
           <input
+            className='input'
             placeholder='Name'
             ref='name'
           />
-          <input type='submit' />
+          <input
+            className='input'
+            type='submit' />
         </form>
         <div>
           <h3>Names</h3>

@@ -12,9 +12,11 @@ export default class BasicButton3 extends Component {
         <h2>Open up console to view the name you submit</h2>
         <form onSubmit={this.onFormSubmit}>
           <input
+            className='input'
             placeholder='Name'
             ref='name' />
           <input
+            className='input'
             type='submit' />
         </form>
       </div>

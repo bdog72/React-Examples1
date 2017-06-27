@@ -5,6 +5,7 @@ import BasicButton2 from './BasicButton2'
 import BasicButton3 from './BasicButton3'
 import SubmitForm from './SubmitForm'
 import SubmitForm1 from './SubmitForm1'
+import SubmitForm2 from './SubmitForm2'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 export default class App extends Component {
@@ -21,9 +22,12 @@ export default class App extends Component {
                 <li><Link to='/ex3'>Basic Button 2</Link></li>
               </div>
               <div>
-                <li><Link to='/ex4'>Submit Form</Link></li>
+                <li><Link to='/ex4'>Submit Form 1</Link></li>
                 <li><Link to='/ex5'>Submit Form 2</Link></li>
                 <li><Link to='/ex6'>Submit Form 3</Link></li>
+              </div>
+              <div>
+                <li><Link to='/ex7'>Submit Form 4</Link></li>
               </div>
             </div>
             <hr />
@@ -33,6 +37,7 @@ export default class App extends Component {
             <Route path='/ex4' component={Ex4} />
             <Route path='/ex5' component={Ex5} />
             <Route path='/ex6' component={Ex6} />
+            <Route path='/ex7' component={Ex7} />
           </ul>
         </div>
       </Router>
@@ -73,6 +78,12 @@ const Ex5 = () => (
 const Ex6 = () => (
   <div>
     <SubmitForm1 />
+  </div>
+)
+
+const Ex7 = () => (
+  <div>
+    <SubmitForm2 />
   </div>
 )
 
